@@ -165,16 +165,16 @@ export const projects = [
   },
   {
     description:
-      "ArtByRaff is a dynamic website for selling handmade paintings by the artist ____.",
+      "ArtByRaff is a dynamic website for selling handmade paintings by the artist Künstler Raffaello.",
     title: "ArtByRaff",
-    project_link: "",
+    project_link: "https://artbyraff.netlify.app/",
     project_image: Artbyraff,
   },
   {
     description:
       "Buy Me A Coffee is a clone built with React JS and Node.js, integrating RazorPay.",
     title: "Buy Me A Coffee",
-    project_link: "",
+    project_link: "https://github.com/bhautik1206/Buy-me-a-coffee",
     project_image: BuyMeACoffee,
   },
   {
