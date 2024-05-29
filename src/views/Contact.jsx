@@ -43,7 +43,7 @@ const Contact = () => {
                   Name
                 </label>
                 <input
-                  type="email"
+                  type="name"
                   id="name"
                   class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   placeholder="Enter your name"
@@ -110,7 +110,7 @@ const Contact = () => {
             <h1 className="text-3xl font-bold">Email</h1>
             <a
               href="hello"
-              className="mb-12 mt-4 font-semibold text-blue-700 block uppercase"
+              className="mb-12 mt-4 font-semibold text-blue-700 block"
             >
               bhautikkapadiya06@gmail.com
             </a>
