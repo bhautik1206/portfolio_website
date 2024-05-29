@@ -1,9 +1,16 @@
+import {
+  Artbyraff,
+  Spotify,
+  CryptoStats,
+  VolkerMonko,
+  BuyMeACoffee,
+} from "./assets/projectimages/index";
+
 export const techStack = [
   {
     name: "C Language",
     link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-plain.svg",
   },
-
   {
     name: "TypeScript",
     link: "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
@@ -61,6 +68,14 @@ export const techStack = [
   {
     name: "MySQl",
     link: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
+  },
+  {
+    name:'Storybook',
+    link:'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/storybook/storybook-plain.svg'
+  },
+  {
+    name:'Ant Design',
+    link:'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/antdesign/antdesign-plain.svg'
   },
   {
     name: "Mongo DB",
@@ -129,5 +144,44 @@ export const serviceData = [
     meet users' specific needs and focus on the logic of displaying
     elements in interactive designs, to optimize the user experience.`,
     img: "https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-backend-no-code-flaticons-flat-flat-icons.png",
+  },
+];
+
+
+export const projects = [
+  {
+    description:
+      "CryptoStats gives you real-time transaction data, dynamic charts, top 100 cryptocurrencies based on value, and breaking news updates.",
+    title: "CryptoStats",
+    project_link: "https://main--cryptocurrency-stats.netlify.app/",
+    project_image: CryptoStats,
+  },
+  {
+    description:
+      "VolkerMunko provides non-banking financial services to all people.",
+    title: "VolkerMunko",
+    project_link: "https://volkermunko-ui.netlify.app/",
+    project_image: VolkerMonko,
+  },
+  {
+    description:
+      "ArtByRaff is a dynamic website for selling handmade paintings by the artist ____.",
+    title: "ArtByRaff",
+    project_link: "",
+    project_image: Artbyraff,
+  },
+  {
+    description:
+      "Buy Me A Coffee is a clone built with React JS and Node.js, integrating RazorPay.",
+    title: "Buy Me A Coffee",
+    project_link: "",
+    project_image: BuyMeACoffee,
+  },
+  {
+    description:
+      "Spotify Clone replicates the Spotify website using React JS and allows playing different songs using Rapid API.",
+    title: "Spotify Clone",
+    project_link: "https://github.com/bhautik1206/Spotify-clone",
+    project_image: Spotify,
   },
 ];
