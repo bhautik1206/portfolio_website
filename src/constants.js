@@ -165,7 +165,7 @@ export const projects = [
   },
   {
     description:
-      "ArtByRaff is a dynamic website for selling handmade paintings by the artist ____.",
+      "ArtByRaff is a dynamic website for selling handmade paintings by the artist Künstler Raffaello.",
     title: "ArtByRaff",
     project_link: "https://artbyraff.netlify.app/",
     project_image: Artbyraff,
