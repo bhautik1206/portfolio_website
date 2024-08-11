@@ -4,6 +4,7 @@ import {
   CryptoStats,
   VolkerMonko,
   BuyMeACoffee,
+  Globpathways
 } from "./assets/projectimages/index";
 
 export const techStack = [
@@ -51,8 +52,8 @@ export const techStack = [
     name: "Redux",
     link: "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg",
   },
-  // { name: "Sass", link: "https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" },
-
+  { name: "Sass",
+    link: "https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" },
   {
     name: "Javascript",
     link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
@@ -64,6 +65,10 @@ export const techStack = [
   {
     name: "React",
     link: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
+  },
+  {
+    name: "Angular Js",
+    link: "https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original-wordmark.svg",
   },
   {
     name: "MySQl",
@@ -185,3 +190,12 @@ export const projects = [
     project_image: Spotify,
   },
 ];
+
+export const freelancingProject=[
+  {
+    title:'GlobPathways',
+    description:'GlobPathWays is a Travel Agency which provide visa consultancy service and all type of travel services',
+    project_link:'https://globpathways.com/',
+    project_image: Globpathways
+  }
+]
