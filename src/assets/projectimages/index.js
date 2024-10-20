@@ -9,3 +9,5 @@ export { default as Spotify } from "./spotify.png";
 export {default as BuyMeACoffee} from './buymeacoffee.png'
 
 export {default as Globpathways } from './globpathways.png'
+
+export {default as NKJewellers } from './nkjewellery.png'
