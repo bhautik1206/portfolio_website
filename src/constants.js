@@ -4,7 +4,8 @@ import {
   CryptoStats,
   VolkerMonko,
   BuyMeACoffee,
-  Globpathways
+  Globpathways,
+  NKJewellers
 } from "./assets/projectimages/index";
 
 export const techStack = [
@@ -92,7 +93,7 @@ export const techStack = [
     name: "Git",
     link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg",
   },
-  // { name: "Docker", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain.svg" },
+  { name: "Docker", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain.svg" },
   // { name: "Firebase", link: "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" },
 
   // { name: "Bash", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" },
@@ -195,7 +196,13 @@ export const freelancingProject=[
   {
     title:'GlobPathways',
     description:'GlobPathWays is a Travel Agency which provide visa consultancy service and all type of travel services',
-    project_link:'https://globpathways.com/',
+    project_link:'https://www.globpathways.com/',
     project_image: Globpathways
+  },
+  {
+    title:'Nk Jewellers ',
+    description:'NK Jewellers specializes in creating and selling exquisite, handcrafted jewelry, including gold, diamond, and precious gemstone pieces',
+    project_link:'https://nkjewellers.com/',
+    project_image: NKJewellers
   }
 ]
