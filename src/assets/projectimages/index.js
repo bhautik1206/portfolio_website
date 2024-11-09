@@ -11,3 +11,11 @@ export {default as BuyMeACoffee} from './buymeacoffee.png'
 export {default as Globpathways } from './globpathways.png'
 
 export {default as NKJewellers } from './nkjewellery.png'
+
+export {default as KeshavDental} from './keshavDental.png'
+
+export {default as AuraDental} from './auradental.png'
+
+export {default as Space13design} from './space13design.png'
+
+export {default as DrsubhiKapadia} from './drsurbhikapadiya.png'

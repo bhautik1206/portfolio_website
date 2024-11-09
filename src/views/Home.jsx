@@ -51,13 +51,12 @@ const Home = () => {
                   : "mt-3 text-base text-white sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
               }
             >
-              I am a Full-Stack Developer. I am currently working at Adrixus
-              Tech Studio as a MERN Stack Intern
+              I am a Full-Stack Developer. I am currently working at Advance Web Software as a Software Engineer
             </p>
             <div className="flex md:justify-start ">
               {contactLinks.map((el) => (
                 <a
-                  href={el.link}
+                  hrJef={el.link}
                   className="mr-5 cursor-pointer mt-8 hover:scale-125"
                 >
                   <img alt="" src={el.url} />
