@@ -5,7 +5,11 @@ import {
   VolkerMonko,
   BuyMeACoffee,
   Globpathways,
-  NKJewellers
+  NKJewellers,
+  KeshavDental,
+  AuraDental,
+  Space13design,
+  DrsubhiKapadia
 } from "./assets/projectimages/index";
 
 export const techStack = [
@@ -204,5 +208,30 @@ export const freelancingProject=[
     description:'NK Jewellers specializes in creating and selling exquisite, handcrafted jewelry, including gold, diamond, and precious gemstone pieces',
     project_link:'https://nkjewellers.com/',
     project_image: NKJewellers
-  }
+  },
+  {
+    title: 'Keshav Dental Clinic',
+    description:'Keshav Dental Clinic provide xpert dental care, advanced treatments, smile makeover, personalized service, compassionate staff, affordable dentistry, state-of-the-art technology, trusted professionals',
+    project_link:'https://www.keshavdentalclinic.com/',
+    project_image:KeshavDental,
+  },
+  {
+    title: 'Aura Smile Dental',
+    description:'Aura Smile Dental Comprehensive dental care, cutting-edge technology, expert team, personalized treatments, beautiful smiles, comfortable environment, preventative care, trusted professionals, patient-focused.',
+    project_link:'https://auradental.com/',
+    project_image:AuraDental,
+  },
+  {
+    title: 'Space13 Design Studio',
+    description:'Creative design solutions, innovative concepts, user-focused experiences, branding expertise, modern aesthetics, responsive websites, digital strategy, custom designs, professional service.',
+    project_link:'https://space13design.com/',
+    project_image: Space13design,
+  },
+  {
+    title: 'Dr Surbhi Kapadia',
+    description:'Dr. Surbhi Kapadia specializes in comprehensive eye care, offering expert treatments for various vision issues and eye health concerns.',
+    project_link:'https://www.drsurbhikapadia.com/',
+    project_image: DrsubhiKapadia,
+  },
+
 ]
