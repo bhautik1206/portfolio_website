@@ -56,7 +56,7 @@ const Home = () => {
             <div className="flex md:justify-start ">
               {contactLinks.map((el) => (
                 <a
-                  hrJef={el.link}
+                  href={el.link}
                   className="mr-5 cursor-pointer mt-8 hover:scale-125"
                 >
                   <img alt="" src={el.url} />
