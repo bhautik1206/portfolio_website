@@ -9,7 +9,8 @@ import {
   KeshavDental,
   AuraDental,
   Space13design,
-  DrsubhiKapadia
+  DrsubhiKapadia,
+  Rapplechildrenhospital
 } from "./assets/projectimages/index";
 
 export const techStack = [
@@ -109,6 +110,11 @@ export const techStack = [
 
 export const contactLinks = [
   {
+    name: "Whatsapp",
+    url: "https://img.icons8.com/doodle/40/000000/whatsapp--v2.png",
+    link: "https://api.whatsapp.com/send/?phone=917043624799&text=Hello%Bhautik%2C%20I%20want%20to%20make%20website%20for%20my%20bussiness",
+  },
+  {
     name: "Stack Overflow",
     url: "https://img.icons8.com/external-tal-revivo-color-tal-revivo/40/000000/external-stack-overflow-is-a-question-and-answer-site-for-professional-logo-color-tal-revivo.png",
     link: "https://stackoverflow.com/users/16425368/bhautik",
@@ -202,6 +208,12 @@ export const freelancingProject=[
     description:'GlobPathWays is a Travel Agency which provide visa consultancy service and all type of travel services',
     project_link:'https://www.globpathways.com/',
     project_image: Globpathways
+  },
+  {
+    title:'Rapple Children Hospital',
+    description:'RappleChilrenHospital which provides world-class Pediatric Hospital in Vadoadara',
+    project_link:'https://www.rapplechildrenhospital.in/',
+    project_image: Rapplechildrenhospital
   },
   {
     title:'Nk Jewellers ',

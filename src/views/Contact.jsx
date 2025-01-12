@@ -18,6 +18,15 @@ const Contact = () => {
     email: false,
   });
 
+  const trackEvent = (category, action, label) => {
+    if (window.gtag) {
+      window.gtag('event', action, {
+        event_category: category,
+        event_label: label,
+      });
+    }
+  };
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -67,8 +76,8 @@ const Contact = () => {
       id="contact"
       className={
         darkMode
-          ? "bg-gray-100 pt-24 md:h-screen"
-          : "bg-black pt-24 text-white md:h-screen"
+          ? "bg-gray-100 pt-24"
+          : "bg-black pt-24 text-white"
       }
     >
       <div className="max-w-7xl mx-auto x-4 sm:px-6 lg:px-8 px-4 ">
@@ -178,12 +187,21 @@ const Contact = () => {
             </form>
           </div>
           <div className="w-full flex flex-col md:items-end mt-12 md:mt-6">
-            <h1 className="text-3xl font-bold">Email</h1>
+            <h1 className="text-2xl font-bold">Email</h1>
             <a
               href="mailto:bhautikkapadiya06@gmail.com"
               className="mb-12 mt-4 font-semibold text-blue-700 block"
+              onClick={() => trackEvent("email", "Click", "email")}
             >
               bhautikkapadiya06@gmail.com
+            </a>
+            <h1 className="text-2xl font-bold">Phone Number</h1>
+            <a
+             href="tel:+917043624799"
+              className="mb-12 mt-4 font-semibold text-blue-700 block"
+              onClick={() => trackEvent("phone number", "Click", "phone number")}
+            >
+            +7043624799
             </a>
             <h1 className="text-3xl font-bold">Social</h1>
             <ul className="flex">
@@ -192,6 +210,7 @@ const Contact = () => {
                   key={index}
                   href={el.link}
                   className="md:ml-6 md:mr-0 mr-6 cursor-pointer mt-4 hover:scale-125 flex flex-col justify-center items-center"
+                  onClick={() => trackEvent("Contact", "Click", el.name)}
                 >
                   <img alt="" src={el.url} />
                 </a>
@@ -211,6 +230,9 @@ const Contact = () => {
         <div className="text-red-500 px-2 text-2xl">&#10084;</div>
         by Bhautik Kapadiya
       </div>
+      <span className="text-[10px] flex items-center justify-center ">
+        Copyright © 2025. All rights reserved.
+      </span>
     </div>
   );
 };

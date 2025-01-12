@@ -2,6 +2,15 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const Card = ({ project_image, description, title, project_link }) => {
+  const trackEvent = (category, action, label) => {
+    if (window.gtag) {
+      window.gtag('event', action, {
+        event_category: category,
+        event_label: label,
+      });
+    }
+  };
+
   return (
     <motion.div
       initial={"hidden"}
@@ -26,6 +35,7 @@ const Card = ({ project_image, description, title, project_link }) => {
         </p>
         <a
           href={project_link}
+          onClick={() => trackEvent("Freelancer", "Click", title)}
           class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-500 rounded-lg hover:bg-blue-200 focus:ring-4 focus:outline-none focus:ring-blue-300"
         >
           Live

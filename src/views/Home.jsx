@@ -10,6 +10,16 @@ import cloudDark from "../assets/cloudDark.png";
 const Home = () => {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
+
+  const trackEvent = (category, action, label) => {
+    if (window.gtag) {
+      window.gtag('event', action, {
+        event_category: category,
+        event_label: label,
+      });
+    }
+  };
+
   return (
     <>
       <div
@@ -57,6 +67,7 @@ const Home = () => {
               {contactLinks.map((el) => (
                 <a
                   href={el.link}
+                  onClick={() => trackEvent("Contact", "Click", el.name)}
                   className="mr-5 cursor-pointer mt-8 hover:scale-125"
                 >
                   <img alt="" src={el.url} />
@@ -66,7 +77,9 @@ const Home = () => {
             </div>
             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
               <div className="mt-3 sm:mt-0 cursor-pointer w-1/2">
-                <a href="https://drive.google.com/file/d/1SnUxBZgg7_BT2WmLe73AONpC3CtgE1KF/view" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-200 md:py-4 md:text-lg md:px-10">
+                <a href="https://drive.google.com/file/d/1SnUxBZgg7_BT2WmLe73AONpC3CtgE1KF/view"
+                  onClick={() => trackEvent("Resume", "Click", "Resume Button")} // Track click event for Resume button
+                  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-200 md:py-4 md:text-lg md:px-10">
                   Resume
                 </a>
               </div>
