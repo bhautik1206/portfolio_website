@@ -230,7 +230,7 @@ const Contact = () => {
         <div className="text-red-500 px-2 text-2xl">&#10084;</div>
         by Bhautik Kapadiya
       </div>
-      <span className="text-[10px] flex items-center justify-center ">
+      <span className="text-[14px] flex items-center justify-center ">
         Copyright © 2025. All rights reserved.
       </span>
     </div>

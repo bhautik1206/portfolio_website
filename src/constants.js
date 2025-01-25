@@ -161,6 +161,21 @@ export const serviceData = [
     elements in interactive designs, to optimize the user experience.`,
     img: "https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-backend-no-code-flaticons-flat-flat-icons.png",
   },
+  {
+    name: "Web Design",
+    desc: `Web design combines various skills to create and maintain websites. This includes graphic design, UI design, coding, UX design, and SEO. I specialize in crafting visually appealing and functional websites that meet user and business needs. My focus is on ensuring an intuitive design and seamless user experience, helping businesses engage visitors effectively while maintaining a user-friendly interface.`,
+    img: "https://cdn-icons-png.flaticon.com/64/1055/1055666.png",
+  },
+  {
+    name: "Application Development",
+    desc: `We provide tailored application development services, including custom front-end design, UI/UX integration, and innovative mobile features like chat and voice. Our focus is on creating responsive, user-friendly, and high-performance applications that deliver seamless experiences across various platforms. We aim to help businesses engage their audience effectively with smooth, intuitive, and functional apps that meet their unique needs.`,
+    img: "https://cdn-icons-png.flaticon.com/64/9662/9662287.png",
+  },
+  {
+    name: "Digital Marketing",
+    desc: `We provide customized digital marketing strategies to help businesses grow and reach their target audience effectively. Our services include SEO, content marketing, social media management, paid advertising, and analytics. By understanding each company’s unique goals, we create data-driven campaigns that drive engagement, increase conversions, and boost online visibility, ensuring measurable results and long-term success.`,
+    img: "https://cdn-icons-png.flaticon.com/64/1998/1998087.png",
+  },
 ];
 
 
