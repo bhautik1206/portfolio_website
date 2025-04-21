@@ -21,3 +21,7 @@ export {default as Space13design} from './space13design.png'
 export {default as DrsubhiKapadia} from './drsurbhikapadiya.png'
 
 export {default as Rapplechildrenhospital} from './rapplechildrenhospital.png'
+
+export {default as StellarDentalClinic } from './stellardental.png'
+
+export {default as Chainpals } from './chainpals.png'
