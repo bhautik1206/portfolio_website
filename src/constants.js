@@ -6,11 +6,13 @@ import {
   BuyMeACoffee,
   Globpathways,
   NKJewellers,
-  KeshavDental,
+  StellarDentalClinic,
   AuraDental,
   Space13design,
   DrsubhiKapadia,
-  Rapplechildrenhospital
+  Rapplechildrenhospital,
+  Chainpals,
+  ShreeDattGuru
 } from "./assets/projectimages/index";
 
 export const techStack = [
@@ -196,13 +198,6 @@ export const projects = [
   },
   {
     description:
-      "ArtByRaff is a dynamic website for selling handmade paintings by the artist Künstler Raffaello.",
-    title: "ArtByRaff",
-    project_link: "https://artbyraff.netlify.app/",
-    project_image: Artbyraff,
-  },
-  {
-    description:
       "Buy Me A Coffee is a clone built with React JS and Node.js, integrating RazorPay.",
     title: "Buy Me A Coffee",
     project_link: "https://github.com/bhautik1206/Buy-me-a-coffee",
@@ -231,16 +226,35 @@ export const freelancingProject=[
     project_image: Rapplechildrenhospital
   },
   {
+    title:'ChainPals',
+    description:'Chainpals.io is a secure Web3 payment platform that leverages smart contracts and escrow services to facilitate safe and efficient cryptocurrency transactions.​',
+    project_link:'https://chainpals.io/',
+    project_image: Chainpals
+  },
+  {
+    title:'Shree Dattguru Enterprise',
+    description:'Shree DattGuru Enterprise is civil construction company which provide all kind of civil construction work in all over gujarat​',
+    project_link:'https://shree-dattguru-enterprise.in/',
+    project_image: ShreeDattGuru
+  },
+  {
     title:'Nk Jewellers ',
     description:'NK Jewellers specializes in creating and selling exquisite, handcrafted jewelry, including gold, diamond, and precious gemstone pieces',
     project_link:'https://nkjewellers.com/',
     project_image: NKJewellers
   },
   {
-    title: 'Keshav Dental Clinic',
-    description:'Keshav Dental Clinic provide xpert dental care, advanced treatments, smile makeover, personalized service, compassionate staff, affordable dentistry, state-of-the-art technology, trusted professionals',
-    project_link:'https://www.keshavdentalclinic.com/',
-    project_image:KeshavDental,
+    title: 'Stellar Dental Clinic',
+    description:'Stellar Dental Clinic provide xpert dental care, advanced treatments, smile makeover, personalized service, compassionate staff, affordable dentistry, state-of-the-art technology, trusted professionals',
+    project_link:'https://stellardentalclinic.com/',
+    project_image:StellarDentalClinic,
+  },
+  {
+    description:
+      "ArtByRaff is a dynamic website for selling handmade paintings by the artist Künstler Raffaello.",
+    title: "ArtByRaff",
+    project_link: "https://artbyraff.netlify.app/",
+    project_image: Artbyraff,
   },
   {
     title: 'Aura Smile Dental',
