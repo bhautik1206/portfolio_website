@@ -12,7 +12,12 @@ import {
   DrsubhiKapadia,
   Rapplechildrenhospital,
   Chainpals,
-  ShreeDattGuru
+  ShreeDattGuru,
+  Wall_tales,
+  Eden_outdoor,
+  Luxury_furniture_vadodara,
+  Serenity_spa,
+  Tgs_spa_salon
 } from "./assets/projectimages/index";
 
 export const techStack = [
@@ -274,5 +279,110 @@ export const freelancingProject=[
     project_link:'https://www.drsurbhikapadia.com/',
     project_image: DrsubhiKapadia,
   },
+  {
+    title: 'The Wall Tales',
+    description: 'A creative online platform showcasing unique wall art, decor, and design inspirations for modern spaces.',
+    project_link: 'https://www.thewalltales.com/',
+    project_image: Wall_tales,
+  },
+  {
+    "title": "Eden Outdoor Furniture",
+    "description": "A handcrafted, minimalist outdoor furniture website showcasing premium outdoor swings, seating and décor.",
+    "project_link": "https://www.edenoutdoorfurniture.com/",
+    "project_image": Eden_outdoor
+  },
+]
 
+export const freelancingProjectHide = [
+  {
+    title: 'GlobPathways',
+    description: 'GlobPathWays is a Travel Agency which provide visa consultancy service and all type of travel services',
+    project_link: 'https://www.globpathways.com/',
+    project_image: Globpathways
+  },
+  {
+    title: 'Rapple Children Hospital',
+    description: 'RappleChilrenHospital which provides world-class Pediatric Hospital in Vadoadara',
+    project_link: 'https://www.rapplechildrenhospital.in/',
+    project_image: Rapplechildrenhospital
+  },
+  {
+    title: 'ChainPals',
+    description: 'Chainpals.io is a secure Web3 payment platform that leverages smart contracts and escrow services to facilitate safe and efficient cryptocurrency transactions.​',
+    project_link: 'https://chainpals.io/',
+    project_image: Chainpals
+  },
+  {
+    title: 'Shree Dattguru Enterprise',
+    description: 'Shree DattGuru Enterprise is civil construction company which provide all kind of civil construction work in all over gujarat​',
+    project_link: 'https://shree-dattguru-enterprise.in/',
+    project_image: ShreeDattGuru
+  },
+  {
+    title: 'Nk Jewellers ',
+    description: 'NK Jewellers specializes in creating and selling exquisite, handcrafted jewelry, including gold, diamond, and precious gemstone pieces',
+    project_link: 'https://nkjewellers.com/',
+    project_image: NKJewellers
+  },
+  {
+    title: 'Stellar Dental Clinic',
+    description: 'Stellar Dental Clinic provide xpert dental care, advanced treatments, smile makeover, personalized service, compassionate staff, affordable dentistry, state-of-the-art technology, trusted professionals',
+    project_link: 'https://stellardentalclinic.com/',
+    project_image: StellarDentalClinic,
+  },
+  {
+    description:
+      "ArtByRaff is a dynamic website for selling handmade paintings by the artist Künstler Raffaello.",
+    title: "ArtByRaff",
+    project_link: "https://artbyraff.netlify.app/",
+    project_image: Artbyraff,
+  },
+  {
+    title: 'Aura Smile Dental',
+    description: 'Aura Smile Dental Comprehensive dental care, cutting-edge technology, expert team, personalized treatments, beautiful smiles, comfortable environment, preventative care, trusted professionals, patient-focused.',
+    project_link: 'https://auradental.com/',
+    project_image: AuraDental,
+  },
+  {
+    title: 'Space13 Design Studio',
+    description: 'Creative design solutions, innovative concepts, user-focused experiences, branding expertise, modern aesthetics, responsive websites, digital strategy, custom designs, professional service.',
+    project_link: 'https://space13design.com/',
+    project_image: Space13design,
+  },
+  {
+    title: 'Dr Surbhi Kapadia',
+    description: 'Dr. Surbhi Kapadia specializes in comprehensive eye care, offering expert treatments for various vision issues and eye health concerns.',
+    project_link: 'https://www.drsurbhikapadia.com/',
+    project_image: DrsubhiKapadia,
+  },
+  {
+    title: 'The Wall Tales',
+    description: 'A creative online platform showcasing unique wall art, decor, and design inspirations for modern spaces.',
+    project_link: 'https://www.thewalltales.com/',
+    project_image: Wall_tales,
+  },
+  {
+    "title": "Eden Outdoor Furniture",
+    "description": "A handcrafted, minimalist outdoor furniture website showcasing premium outdoor swings, seating and décor.",
+    "project_link": "https://www.edenoutdoorfurniture.com/",
+    "project_image": Eden_outdoor
+  },
+  {
+    "title": "Luxury Furniture Vadodara",
+    "description": "A premium furniture website based in Vadodara offering luxury furnishings and bespoke interior pieces.",
+    "project_link": "https://www.luxuryfurniturevadodara.in/",
+    "project_image": Luxury_furniture_vadodara
+  },
+  {
+    "title": "Serenity Spa",
+    "description": "Luxury wellness & body spa based in Vadodara offering signature treatments like hammam, deep-tissue and couple massages.",
+    "project_link": "https://www.serenityspa.in/",
+    "project_image": Serenity_spa
+  },
+  {
+    "title": "TGS Spa & Salon",
+    "description": "An award-winning, ISO-9001 certified full-service spa and salon in Vadodara offering luxurious massages, facials, hair services and more.",
+    "project_link": "https://www.tgsspa.com/",
+    "project_image": Tgs_spa_salon
+  }
 ]

@@ -1,11 +1,17 @@
 import React, { useContext } from "react";
 import Card from "../components/Card";
 import { ThemeContext } from "../themeProvider";
-import {freelancingProject} from '../constants' 
+import {freelancingProject,freelancingProjectHide} from '../constants' 
+import { useLocation } from "react-router-dom";
 
 const Freelancing = () => {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
+  const location = useLocation();
+
+  // Set isHide to true if the route is "/hide"
+  const isHide = location.pathname === "/hide";
+  
 
   return (
     <div
@@ -18,7 +24,16 @@ const Freelancing = () => {
           What I Built
         </h4>
         <div className="mt-8 flex justify-between items-stretch flex-wrap">
-          {freelancingProject.map((project, index) => (
+          {!isHide &&freelancingProject.map((project, index) => (
+            <Card
+              key={index}
+              description={project.description}
+              title={project.title}
+              project_link={project.project_link}
+              project_image={project.project_image}
+            />
+          ))}
+           {isHide && freelancingProjectHide.map((project, index) => (
             <Card
               key={index}
               description={project.description}

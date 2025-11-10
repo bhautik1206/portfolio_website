@@ -27,3 +27,16 @@ export {default as StellarDentalClinic } from './stellardental.png'
 export {default as Chainpals } from './chainpals.png'
 
 export {default as ShreeDattGuru} from './shree_datt_guru.png';
+
+export {default as Wall_tales} from './wall_tale.png'
+
+export {default as Eden_outdoor} from './Eden_outdoor.png'
+
+export {default as Luxury_furniture_vadodara} from './Luxury_furniture.png';
+
+export {default as Serenity_spa} from './serenity_spa.png'
+
+export {default as Tgs_spa_salon} from './tgs_spa.png';
+
+
+
