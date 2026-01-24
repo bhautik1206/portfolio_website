@@ -38,5 +38,6 @@ export {default as Serenity_spa} from './serenity_spa.png'
 
 export {default as Tgs_spa_salon} from './tgs_spa.png';
 
+export {default as Akshayinteriors} from './akshayinteriors.png'
 
-
+export {default as GalistaJewels} from './galisgalista.png'
