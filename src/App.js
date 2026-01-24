@@ -27,16 +27,16 @@ function App() {
               <Home />
               <About />
               <Services />
-              <Freelancing />
+              <Freelancing  isHide={false}/>
               <Projects />
               <Contact />
             </Route>
 
-            <Route exact path="/hide">
+            <Route path={["/", "/hide"]}>
               <Home />
               <About />
               <Services />
-              <Freelancing />
+              <Freelancing isHide={true} />
               <Projects />
               <Contact />
             </Route>

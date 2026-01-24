@@ -2,16 +2,16 @@ import React, { useContext } from "react";
 import Card from "../components/Card";
 import { ThemeContext } from "../themeProvider";
 import {freelancingProject,freelancingProjectHide} from '../constants' 
-import { useLocation } from "react-router-dom";
+// import { useLocation } from "react-router-dom";
 
-const Freelancing = () => {
+const Freelancing = ({isHide }) => {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
-  const location = useLocation();
+  // const location = useLocation();
 
   // Set isHide to true if the route is "/hide"
-  const isHide = location.pathname === "/hide";
-  
+  // const isHide = location.hash === "#/hide";
+  // console.log(location);
 
   return (
     <div

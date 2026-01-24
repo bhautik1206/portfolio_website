@@ -17,7 +17,9 @@ import {
   Eden_outdoor,
   Luxury_furniture_vadodara,
   Serenity_spa,
-  Tgs_spa_salon
+  Tgs_spa_salon,
+  Akshayinteriors,
+  GalistaJewels
 } from "./assets/projectimages/index";
 
 export const techStack = [
@@ -218,11 +220,11 @@ export const projects = [
 ];
 
 export const freelancingProject=[
-  {
-    title:'GlobPathways',
-    description:'GlobPathWays is a Travel Agency which provide visa consultancy service and all type of travel services',
-    project_link:'https://www.globpathways.com/',
-    project_image: Globpathways
+    {
+    title: 'Akshay Interiors',
+    description: 'RappleChilrenHospital which provides world-class Pediatric Hospital in Vadoadara',
+    project_link: 'https://www.akshayinteriors.in/',
+    project_image: Akshayinteriors
   },
   {
     title:'Rapple Children Hospital',
@@ -243,10 +245,16 @@ export const freelancingProject=[
     project_image: ShreeDattGuru
   },
   {
-    title:'Nk Jewellers ',
-    description:'NK Jewellers specializes in creating and selling exquisite, handcrafted jewelry, including gold, diamond, and precious gemstone pieces',
-    project_link:'https://nkjewellers.com/',
-    project_image: NKJewellers
+    title:'GlobPathways',
+    description:'GlobPathWays is a Travel Agency which provide visa consultancy service and all type of travel services',
+    project_link:'https://www.globpathways.com/',
+    project_image: Globpathways
+  },
+  {
+    title:'Galistag Jewels',
+    description:'Galista Jewels specializes in creating and selling exquisite, handcrafted jewelry, including gold, diamond, and precious gemstone pieces',
+    project_link:'https://www.galistajewels.com/',
+    project_image: GalistaJewels
   },
   {
     title: 'Stellar Dental Clinic',
@@ -294,11 +302,11 @@ export const freelancingProject=[
 ]
 
 export const freelancingProjectHide = [
-  {
-    title: 'GlobPathways',
-    description: 'GlobPathWays is a Travel Agency which provide visa consultancy service and all type of travel services',
-    project_link: 'https://www.globpathways.com/',
-    project_image: Globpathways
+   {
+    title: 'Akshay Interiors',
+    description: 'RappleChilrenHospital which provides world-class Pediatric Hospital in Vadoadara',
+    project_link: 'https://www.akshayinteriors.in/',
+    project_image: Akshayinteriors
   },
   {
     title: 'Rapple Children Hospital',
@@ -319,10 +327,16 @@ export const freelancingProjectHide = [
     project_image: ShreeDattGuru
   },
   {
-    title: 'Nk Jewellers ',
-    description: 'NK Jewellers specializes in creating and selling exquisite, handcrafted jewelry, including gold, diamond, and precious gemstone pieces',
-    project_link: 'https://nkjewellers.com/',
-    project_image: NKJewellers
+    title: 'GlobPathways',
+    description: 'GlobPathWays is a Travel Agency which provide visa consultancy service and all type of travel services',
+    project_link: 'https://www.globpathways.com/',
+    project_image: Globpathways
+  },
+    {
+    title:'Galistag Jewels',
+    description:'Galista Jewels specializes in creating and selling exquisite, handcrafted jewelry, including gold, diamond, and precious gemstone pieces',
+    project_link:'https://www.galistajewels.com/',
+    project_image: GalistaJewels
   },
   {
     title: 'Stellar Dental Clinic',
