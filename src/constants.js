@@ -251,7 +251,7 @@ export const freelancingProject=[
     project_image: Globpathways
   },
   {
-    title:'Galistag Jewels',
+    title:'Galista Jewels',
     description:'Galista Jewels specializes in creating and selling exquisite, handcrafted jewelry, including gold, diamond, and precious gemstone pieces',
     project_link:'https://www.galistajewels.com/',
     project_image: GalistaJewels
@@ -333,7 +333,7 @@ export const freelancingProjectHide = [
     project_image: Globpathways
   },
     {
-    title:'Galistag Jewels',
+    title:'Galista Jewels',
     description:'Galista Jewels specializes in creating and selling exquisite, handcrafted jewelry, including gold, diamond, and precious gemstone pieces',
     project_link:'https://www.galistajewels.com/',
     project_image: GalistaJewels
