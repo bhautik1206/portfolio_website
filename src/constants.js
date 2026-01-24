@@ -5,7 +5,7 @@ import {
   VolkerMonko,
   BuyMeACoffee,
   Globpathways,
-  NKJewellers,
+  // NKJewellers,
   StellarDentalClinic,
   AuraDental,
   Space13design,
