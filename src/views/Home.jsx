@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import heroBg from "../assets/webdev.svg";
-import Typical from "react-typical";
+// animated typing text; replaced react-typical with a React 18 compatible package
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { contactLinks } from "../constants";
 import { ThemeContext } from "../themeProvider";
 import { motion } from "framer-motion";
@@ -19,6 +20,18 @@ const Home = () => {
       });
     }
   };
+
+  // typing animation text from react-simple-typewriter
+  // useTypewriter returns [text, helpers], we only need the text
+  const [typedText] = useTypewriter({
+    words: [
+      "Front End Developer",
+      "Full Stack Developer",
+      "Back End Developer",
+    ],
+    loop: 0, // infinite
+    delaySpeed: 1000,
+  });
 
   return (
     <>
@@ -41,17 +54,8 @@ const Home = () => {
                 Hi, I am Bhautik
               </motion.span>
               <span className="block text-blue-500 z-0 lg:inline">
-                <Typical
-                  steps={[
-                    "Front End Developer",
-                    1000,
-                    "Full Stack Developer",
-                    1000,
-                    "Back End Developer",
-                    1000,
-                  ]}
-                  loop={Infinity}
-                />
+                {typedText}
+                <Cursor />
               </span>
             </h1>
             <p
@@ -77,7 +81,8 @@ const Home = () => {
             </div>
             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
               <div className="mt-3 sm:mt-0 cursor-pointer w-1/2">
-                <a href="https://drive.google.com/file/d/13wLZs1yXvlpUAn5Hc0xgiFShX3DKYuT5/view?usp=sharing"
+                <a href="https://drive.google.com/file/d/1Gqejsfz2JfshMMtxqv9WBJdr4-Tp6Gch/view?usp=sharing"
+                target="blank"
                   onClick={() => trackEvent("Resume", "Click", "Resume Button")} // Track click event for Resume button
                   className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-600 md:py-4 md:text-lg md:px-10">
                   Resume

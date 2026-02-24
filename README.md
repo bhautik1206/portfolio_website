@@ -1,5 +1,13 @@
 # Getting Started with Create React App
 
+⚠️ **Migrated to React 18 and Tailwind 3**
+
+This repository has been updated from older React/Tailwind versions. Make sure you:
+
+1. run `npm install` to grab the new dependencies (`react` 18.x, `react-router-dom` 6.x, `tailwindcss` 3.x, etc.)
+2. use `npm start` as usual; the code now uses the React 18 `createRoot` API and Tailwind uses the `content` configuration key.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

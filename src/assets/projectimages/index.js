@@ -41,3 +41,5 @@ export {default as Tgs_spa_salon} from './tgs_spa.png';
 export {default as Akshayinteriors} from './akshayinteriors.png'
 
 export {default as GalistaJewels} from './galisgalista.png'
+
+export { default as CKJewellery} from './ckjwellery.png'
