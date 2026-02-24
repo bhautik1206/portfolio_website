@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { HashRouter as Router, Route, Switch } from "react-router-dom";
+// React Router v6: Switch -> Routes, exact removed, element prop used
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Contact from "./views/Contact";
 import Navbar from "./components/Navbar";
 import About from "./views/About";
@@ -22,25 +23,34 @@ function App() {
       {!loading ? (
         <Router>
           <Navbar />
-          <Switch>
-            <Route exact path="/">
-              <Home />
-              <About />
-              <Services />
-              <Freelancing  isHide={false}/>
-              <Projects />
-              <Contact />
-            </Route>
-
-            <Route path={["/", "/hide"]}>
-              <Home />
-              <About />
-              <Services />
-              <Freelancing isHide={true} />
-              <Projects />
-              <Contact />
-            </Route>
-          </Switch>
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <>
+                  <Home />
+                  <About />
+                  <Services />
+                  <Freelancing isHide={false} />
+                  <Projects />
+                  <Contact />
+                </>
+              }
+            />
+            <Route
+              path="/hide"
+              element={
+                <>
+                  <Home />
+                  <About />
+                  <Services />
+                  <Freelancing isHide={true} />
+                  <Projects />
+                  <Contact />
+                </>
+              }
+            />
+          </Routes>
         </Router>
       ) : (
         <LoadingScreen />

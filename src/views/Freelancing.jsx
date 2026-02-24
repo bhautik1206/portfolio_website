@@ -2,16 +2,17 @@ import React, { useContext } from "react";
 import Card from "../components/Card";
 import { ThemeContext } from "../themeProvider";
 import {freelancingProject,freelancingProjectHide} from '../constants' 
-// import { useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
-const Freelancing = ({isHide }) => {
+const Freelancing = () => {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
-  // const location = useLocation();
+  const location = useLocation();
 
-  // Set isHide to true if the route is "/hide"
-  // const isHide = location.hash === "#/hide";
-  // console.log(location);
+  // determine visibility based on the current URL; works for both
+  // BrowserRouter and HashRouter (#/hide)
+  const isHide =
+    location.pathname === "/hide" || location.hash === "#/hide";
 
   return (
     <div

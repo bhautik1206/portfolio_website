@@ -61,7 +61,7 @@ const Navbar = () => {
               {`<Bhautik Kapadiya/>`}
             </a>
           </div>
-          <div class="hidden justify-between items-center w-full md:flex md:w-auto ">
+          <div className="hidden justify-between items-center w-full md:flex md:w-auto ">
             <ul
               class={
                 "flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-medium"
@@ -143,7 +143,7 @@ const Navbar = () => {
                 : "bg-black py-2 px-2 md:p-0 z-50 fixed top-16 mt-2 rounded-lg shadow-lg right-2 block w-40"
             }
           >
-            <ul class="md:hidden md:flex-row md:space-y-8 md:mt-0 md:text-md md:font-medium">
+            <ul className="md:hidden md:flex-row md:space-y-8 md:mt-0 md:text-md md:font-medium">
               {links.map((el) => (
                 <Link
                   to={el.route}

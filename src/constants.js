@@ -19,7 +19,8 @@ import {
   Serenity_spa,
   Tgs_spa_salon,
   Akshayinteriors,
-  GalistaJewels
+  GalistaJewels,
+  CKJewellery
 } from "./assets/projectimages/index";
 
 export const techStack = [
@@ -252,9 +253,15 @@ export const freelancingProject=[
   },
   {
     title:'Galista Jewels',
-    description:'Galista Jewels specializes in creating and selling exquisite, handcrafted jewelry, including gold, diamond, and precious gemstone pieces',
+    description:'Galista Jewels specializes in creating and selling exquisite, handcrafted jewelry which is widely and cost effect range',
     project_link:'https://www.galistajewels.com/',
     project_image: GalistaJewels
+  },
+  {
+    title:'CK Jewellers',
+    description:'CK Jewellers specializes in creating and selling exquisite, handcrafted jewelry, including gold, diamond, and precious gemstone pieces',
+    project_link:'https://ckjewellers.com/',
+    project_image: CKJewellery
   },
   {
     title: 'Stellar Dental Clinic',
@@ -337,6 +344,12 @@ export const freelancingProjectHide = [
     description:'Galista Jewels specializes in creating and selling exquisite, handcrafted jewelry, including gold, diamond, and precious gemstone pieces',
     project_link:'https://www.galistajewels.com/',
     project_image: GalistaJewels
+  },
+  {
+    title:'CK Jewellers',
+    description:'CK Jewellers specializes in creating and selling exquisite, handcrafted jewelry, including gold, diamond, and precious gemstone pieces',
+    project_link:'https://ckjewellers.com/',
+    project_image: CKJewellery
   },
   {
     title: 'Stellar Dental Clinic',
