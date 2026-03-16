@@ -20,7 +20,8 @@ import {
   Tgs_spa_salon,
   Akshayinteriors,
   GalistaJewels,
-  CKJewellery
+  CKJewellery,
+  AAA,
 } from "./assets/projectimages/index";
 
 export const techStack = [
@@ -228,6 +229,12 @@ export const freelancingProject=[
     project_image: Akshayinteriors
   },
   {
+    title:'AAA By Dharam Patel',
+    description:'AAA By Dharam Patel is award winning famous interior Design',
+    project_link:'https://aaa.works/',
+    project_image: AAA
+  },
+  {
     title:'Rapple Children Hospital',
     description:'RappleChilrenHospital which provides world-class Pediatric Hospital in Vadoadara',
     project_link:'https://www.rapplechildrenhospital.in/',
@@ -320,6 +327,12 @@ export const freelancingProjectHide = [
     description: 'RappleChilrenHospital which provides world-class Pediatric Hospital in Vadoadara',
     project_link: 'https://www.rapplechildrenhospital.in/',
     project_image: Rapplechildrenhospital
+  },
+  {
+    title:'AAA By Dharam Patel',
+    description:'AAA By Dharam Patel is award winning famous interior Design',
+    project_link:'https://aaa.works/',
+    project_image: AAA
   },
   {
     title: 'ChainPals',

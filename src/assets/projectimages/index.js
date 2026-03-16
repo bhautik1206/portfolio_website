@@ -43,3 +43,5 @@ export {default as Akshayinteriors} from './akshayinteriors.png'
 export {default as GalistaJewels} from './galisgalista.png'
 
 export { default as CKJewellery} from './ckjwellery.png'
+
+export { default as AAA } from './aaa.png';
