@@ -137,6 +137,50 @@ export const techStack = [
     name: "Codex",
     link: "https://cdn.simpleicons.org/openai",
   },
+  {
+    name: "ChatGPT",
+    link: "https://cdn.simpleicons.org/openai",
+  },
+  {
+    name: "C#",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg",
+  },
+  {
+    name: "Entity Framework",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-plain.svg",
+  },
+  {
+    name: "SQL Server",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg",
+  },
+  {
+    name: "LINQ",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg",
+  },
+  {
+    name: "GraphQL",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
+  },
+  {
+    name: "NextJS",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+  },
+  {
+    name: "JIRA",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg",
+  },
+  {
+    name: "Bitbucket",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bitbucket/bitbucket-original.svg",
+  },
+  {
+    name: "Trello",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg",
+  },
+  {
+    name: "WPF",
+    link: "https://cdn.simpleicons.org/dotnet",
+  },
   // { name: "Firebase", link: "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" },
 
   // { name: "Bash", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" },
@@ -144,6 +188,49 @@ export const techStack = [
 
   // { name: "VS Code", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
   // {name: "", link: "https://repository-images.githubusercontent.com/59065830/b62be480-45d2-11ea-9989-803db0f9c44d"}
+];
+
+export const careerTimeline = [
+  {
+    company: "Validat Limited",
+    role: "Software Engineer",
+    duration: "April 2026 - Present",
+    current: true,
+    highlights: [
+      "Designed and developed secure, scalable banking and crypto transaction modules using .NET, supporting onboarding, fiat currency processing, and seamless on-ramp/off-ramp operations.",
+      "Built dynamic and responsive user interfaces using React.js, improving user experience for account onboarding, transaction flows, and real-time financial interactions.",
+      "Developed and integrated RESTful APIs with .NET for crypto transactions, ensuring secure communication between frontend and backend while optimizing performance and reliability of financial operations.",
+    ],
+  },
+  {
+    company: "Advance Web Software",
+    role: "Software Engineer",
+    duration: "July 2024 - March 2026",
+    current: false,
+    highlights: [
+      "Designed and developed scalable .NET services for a real-time code execution platform, supporting 1.6 million+ concurrent users.",
+      "Developed and maintained the front-end architecture using Angular, delivering dynamic, responsive UI components while adhering to best practices for performance and code maintainability.",
+      "Collaborated with cross-functional teams to integrate front-end features with SQL-based back-end systems, ensuring seamless communication between client and server-side components.",
+      "Developed RESTful APIs using .NET to manage code submission and result retrieval, integrated with AngularJS on the frontend.",
+      "Optimized data retrieval performance by 20% by restructuring complex queries with Entity Framework and LINQ, reducing API response times from 1.2s to 700ms on average in high-traffic endpoints.",
+      "Built a real-time chat interaction system between users using AngularJS and Firebase.",
+      "Added a bulk upload feature which reduced the manual work of adding products into the database.",
+      "Enhanced a sports data monitoring application using WPF, providing live visualization and reporting of real-time game statistics.",
+    ],
+  },
+  {
+    company: "Adrixus Tech Studio",
+    role: "Full Stack Developer",
+    duration: "Dec 2023 - July 2024",
+    current: false,
+    highlights: [
+      "Utilized React Js principles to support improved component lifecycle practices and increase turnaround speed while adhering to deadlines; communicated with teams and management to respond to changing requirements.",
+      "Expanded the applicability of isomorphic React Js and Node Js to the website and presented novel concepts in a technical report to the Full Development Team.",
+      "Developed and managed the frontend of an e-commerce platform using React Js & Ant Design.",
+      "Improved response time by 20% by refactoring the codebase and redesigning the database schema and queries.",
+      "Worked on three web applications targeting customers, selling vendors, and admin users; built 30+ GraphQL APIs covering login/sign up, product viewing, cart, and checkout flows.",
+    ],
+  },
 ];
 
 export const contactLinks = [

@@ -65,7 +65,8 @@ const Home = () => {
                   : "mt-3 text-base text-white sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
               }
             >
-              I am a Full-Stack Developer. I am currently working at Advance Web Software as a Software Engineer
+                I'm a Gen AI Engineer & Full-Stack Developer.
+                <br /> Currently working at Validat Limited as a Software Engineer.
             </p>
             <div className="flex md:justify-start ">
               {contactLinks.map((el) => (
