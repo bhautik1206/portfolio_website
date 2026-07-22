@@ -45,3 +45,9 @@ export {default as GalistaJewels} from './galisgalista.png'
 export { default as CKJewellery} from './ckjwellery.png'
 
 export { default as AAA } from './aaa.png';
+
+export { default as NoSnoringEntBaroda} from './nosnoringent.png'
+
+export { default as DhanrajFurniture} from './dhanrajfurniture.png'
+
+export { default as ChandanOrthodontics} from './Chandanorthodontics.png'

@@ -22,6 +22,9 @@ import {
   GalistaJewels,
   CKJewellery,
   AAA,
+  NoSnoringEntBaroda,
+  DhanrajFurniture,
+  ChandanOrthodontics
 } from "./assets/projectimages/index";
 
 export const techStack = [
@@ -110,6 +113,30 @@ export const techStack = [
     link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg",
   },
   { name: "Docker", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain.svg" },
+  {
+    name: ".NET",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-plain.svg",
+  },
+  {
+    name: "Angular",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg",
+  },
+  {
+    name: "AWS",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+  },
+  {
+    name: "Cloud Computing",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg",
+  },
+  {
+    name: "Claude",
+    link: "https://cdn.simpleicons.org/claude",
+  },
+  {
+    name: "Codex",
+    link: "https://cdn.simpleicons.org/openai",
+  },
   // { name: "Firebase", link: "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" },
 
   // { name: "Bash", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" },
@@ -313,6 +340,24 @@ export const freelancingProject=[
     "project_link": "https://www.edenoutdoorfurniture.com/",
     "project_image": Eden_outdoor
   },
+  {
+    title: 'No Snoring ENT Baroda',
+    description: 'No Snoring ENT Baroda offers expert ENT care and specialized treatments for snoring and sleep-related breathing issues.',
+    project_link: 'https://www.nosnoringentbaroda.in/',
+    project_image: NoSnoringEntBaroda
+  },
+  {
+    title: 'Dhanraj Furniture',
+    description: 'Dhanraj Furniture provides a wide range of quality furniture, blending style and comfort for every home.',
+    project_link: 'https://www.dhanrajfurniture.in/',
+    project_image: DhanrajFurniture
+  },
+  {
+    title: 'Chandan Orthodontics',
+    description: 'Chandan Orthodontics offers specialized orthodontic care, including braces and smile correction treatments.',
+    project_link: 'https://www.chandanorthodontics.com/',
+    project_image: ChandanOrthodontics
+  },
 ]
 
 export const freelancingProjectHide = [
@@ -424,5 +469,23 @@ export const freelancingProjectHide = [
     "description": "An award-winning, ISO-9001 certified full-service spa and salon in Vadodara offering luxurious massages, facials, hair services and more.",
     "project_link": "https://www.tgsspa.com/",
     "project_image": Tgs_spa_salon
+  },
+  {
+    title: 'No Snoring ENT Baroda',
+    description: 'No Snoring ENT Baroda offers expert ENT care and specialized treatments for snoring and sleep-related breathing issues.',
+    project_link: 'https://www.nosnoringentbaroda.in/',
+    project_image: NoSnoringEntBaroda
+  },
+  {
+    title: 'Dhanraj Furniture',
+    description: 'Dhanraj Furniture provides a wide range of quality furniture, blending style and comfort for every home.',
+    project_link: 'https://www.dhanrajfurniture.in/',
+    project_image: DhanrajFurniture
+  },
+  {
+    title: 'Chandan Orthodontics',
+    description: 'Chandan Orthodontics offers specialized orthodontic care, including braces and smile correction treatments.',
+    project_link: 'https://www.chandanorthodontics.com/',
+    project_image: ChandanOrthodontics
   }
 ]
