@@ -51,3 +51,13 @@ export { default as NoSnoringEntBaroda} from './nosnoringent.png'
 export { default as DhanrajFurniture} from './dhanrajfurniture.png'
 
 export { default as ChandanOrthodontics} from './Chandanorthodontics.png'
+
+export { default as KrishnasDecorFurniture} from './krishnasdecorfurniture.png'
+
+export { default as AboliBhatt} from './abolibhatt.png'
+
+export { default as Bapzee} from './bapzee.png'
+
+export { default as AstuJewellery} from './astujewellery.png'
+
+export { default as Snss} from './snss.png'

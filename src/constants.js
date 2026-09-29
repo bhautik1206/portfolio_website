@@ -13,8 +13,6 @@ import {
   Rapplechildrenhospital,
   Chainpals,
   ShreeDattGuru,
-  Wall_tales,
-  Eden_outdoor,
   Luxury_furniture_vadodara,
   Serenity_spa,
   Tgs_spa_salon,
@@ -24,7 +22,12 @@ import {
   AAA,
   NoSnoringEntBaroda,
   DhanrajFurniture,
-  ChandanOrthodontics
+  ChandanOrthodontics,
+  KrishnasDecorFurniture,
+  AboliBhatt,
+  Bapzee,
+  AstuJewellery,
+  Snss
 } from "./assets/projectimages/index";
 
 export const techStack = [
@@ -107,7 +110,7 @@ export const techStack = [
     link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain.svg",
   },
   // { name: "Heroku", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-plain.svg" },
-  // { name: "Azure", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-plain.svg" },
+  { name: "Azure", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-plain.svg" },
   {
     name: "Git",
     link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg",
@@ -416,18 +419,6 @@ export const freelancingProject=[
     project_image: DrsubhiKapadia,
   },
   {
-    title: 'The Wall Tales',
-    description: 'A creative online platform showcasing unique wall art, decor, and design inspirations for modern spaces.',
-    project_link: 'https://www.thewalltales.com/',
-    project_image: Wall_tales,
-  },
-  {
-    "title": "Eden Outdoor Furniture",
-    "description": "A handcrafted, minimalist outdoor furniture website showcasing premium outdoor swings, seating and décor.",
-    "project_link": "https://www.edenoutdoorfurniture.com/",
-    "project_image": Eden_outdoor
-  },
-  {
     title: 'No Snoring ENT Baroda',
     description: 'No Snoring ENT Baroda offers expert ENT care and specialized treatments for snoring and sleep-related breathing issues.',
     project_link: 'https://www.nosnoringentbaroda.in/',
@@ -444,6 +435,36 @@ export const freelancingProject=[
     description: 'Chandan Orthodontics offers specialized orthodontic care, including braces and smile correction treatments.',
     project_link: 'https://www.chandanorthodontics.com/',
     project_image: ChandanOrthodontics
+  },
+  {
+    title: "Krishna's Décor Furniture",
+    description: "Krishna's Décor Furniture offers custom-made and ready furniture for homes across Ahmedabad, blending craftsmanship with modern designs.",
+    project_link: 'https://krishnasdecorfurniture.com/',
+    project_image: KrishnasDecorFurniture
+  },
+  {
+    title: 'Aboli Bhatt',
+    description: 'Aboli Bhatt is a designer boutique based in Ahmedabad, known for exquisite bridal lehengas, designer blouses and custom ethnic wear.',
+    project_link: 'https://abolibhatt.com/',
+    project_image: AboliBhatt
+  },
+  {
+    title: 'Bapzee',
+    description: 'Bapzee is a streetwear and lifestyle merchandise brand offering trendy graphic apparel, hoodies and accessories.',
+    project_link: 'https://bapzee.com/',
+    project_image: Bapzee
+  },
+  {
+    title: 'Astu Jewellery',
+    description: 'Astu Jewellery crafts bespoke custom gold jewellery in Mumbai, blending traditional craftsmanship with contemporary design.',
+    project_link: 'https://astujewellery.com/',
+    project_image: AstuJewellery
+  },
+  {
+    title: 'Shades & Shapes Studio',
+    description: 'Shades & Shapes Studio is an Ahmedabad-based interior and architectural design studio crafting modern, functional and personalized spaces.',
+    project_link: 'https://snss.design/',
+    project_image: Snss
   },
 ]
 
@@ -528,18 +549,6 @@ export const freelancingProjectHide = [
     project_image: DrsubhiKapadia,
   },
   {
-    title: 'The Wall Tales',
-    description: 'A creative online platform showcasing unique wall art, decor, and design inspirations for modern spaces.',
-    project_link: 'https://www.thewalltales.com/',
-    project_image: Wall_tales,
-  },
-  {
-    "title": "Eden Outdoor Furniture",
-    "description": "A handcrafted, minimalist outdoor furniture website showcasing premium outdoor swings, seating and décor.",
-    "project_link": "https://www.edenoutdoorfurniture.com/",
-    "project_image": Eden_outdoor
-  },
-  {
     "title": "Luxury Furniture Vadodara",
     "description": "A premium furniture website based in Vadodara offering luxury furnishings and bespoke interior pieces.",
     "project_link": "https://www.luxuryfurniturevadodara.in/",
@@ -574,5 +583,35 @@ export const freelancingProjectHide = [
     description: 'Chandan Orthodontics offers specialized orthodontic care, including braces and smile correction treatments.',
     project_link: 'https://www.chandanorthodontics.com/',
     project_image: ChandanOrthodontics
-  }
+  },
+  {
+    title: "Krishna's Décor Furniture",
+    description: "Krishna's Décor Furniture offers custom-made and ready furniture for homes across Ahmedabad, blending craftsmanship with modern designs.",
+    project_link: 'https://krishnasdecorfurniture.com/',
+    project_image: KrishnasDecorFurniture
+  },
+  {
+    title: 'Aboli Bhatt',
+    description: 'Aboli Bhatt is a designer boutique based in Ahmedabad, known for exquisite bridal lehengas, designer blouses and custom ethnic wear.',
+    project_link: 'https://abolibhatt.com/',
+    project_image: AboliBhatt
+  },
+  {
+    title: 'Bapzee',
+    description: 'Bapzee is a streetwear and lifestyle merchandise brand offering trendy graphic apparel, hoodies and accessories.',
+    project_link: 'https://bapzee.com/',
+    project_image: Bapzee
+  },
+  {
+    title: 'Astu Jewellery',
+    description: 'Astu Jewellery crafts bespoke custom gold jewellery in Mumbai, blending traditional craftsmanship with contemporary design.',
+    project_link: 'https://astujewellery.com/',
+    project_image: AstuJewellery
+  },
+  {
+    title: 'Shades & Shapes Studio',
+    description: 'Shades & Shapes Studio is an Ahmedabad-based interior and architectural design studio crafting modern, functional and personalized spaces.',
+    project_link: 'https://snss.design/',
+    project_image: Snss
+  },
 ]
