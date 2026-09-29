@@ -61,3 +61,5 @@ export { default as Bapzee} from './bapzee.png'
 export { default as AstuJewellery} from './astujewellery.png'
 
 export { default as Snss} from './snss.png'
+
+export { default as TheAurePerfume} from './theaureperfume.png'

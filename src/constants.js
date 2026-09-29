@@ -27,7 +27,8 @@ import {
   AboliBhatt,
   Bapzee,
   AstuJewellery,
-  Snss
+  Snss,
+  TheAurePerfume
 } from "./assets/projectimages/index";
 
 export const techStack = [
@@ -466,6 +467,12 @@ export const freelancingProject=[
     project_link: 'https://snss.design/',
     project_image: Snss
   },
+  {
+    title: 'AURĒ Perfume',
+    description: 'AURĒ is a molecular perfume manufacturer based in Surat, producing high-concentration Extrait de Parfum fragrances with exceptional longevity and precision.',
+    project_link: 'https://www.theaureperfume.in/',
+    project_image: TheAurePerfume
+  },
 ]
 
 export const freelancingProjectHide = [
@@ -613,5 +620,11 @@ export const freelancingProjectHide = [
     description: 'Shades & Shapes Studio is an Ahmedabad-based interior and architectural design studio crafting modern, functional and personalized spaces.',
     project_link: 'https://snss.design/',
     project_image: Snss
+  },
+  {
+    title: 'AURĒ Perfume',
+    description: 'AURĒ is a molecular perfume manufacturer based in Surat, producing high-concentration Extrait de Parfum fragrances with exceptional longevity and precision.',
+    project_link: 'https://www.theaureperfume.in/',
+    project_image: TheAurePerfume
   },
 ]
