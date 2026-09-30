@@ -9,8 +9,9 @@ export function ExperienceTimeline() {
   return (
     <Section
       id="experience"
-      eyebrow="Experience"
-      title="Where I've been building."
+      size="chapter"
+      title="Experience,"
+      titleMuted="built by shipping."
       description="Product engineering across fintech, real-time platforms and e-commerce, alongside freelance client work since 2022."
     >
       <ol className="relative ml-2 border-l border-border sm:ml-4">

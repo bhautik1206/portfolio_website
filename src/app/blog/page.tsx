@@ -1,9 +1,10 @@
-import type { Metadata } from "next";
+import { breadcrumbSchema, JsonLd, pageMetadata, PERSON_ID } from "@/lib/seo";
+import { site } from "@/data/site";
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import { FaMedium } from "react-icons/fa";
 import { getMediumPosts } from "@/lib/medium";
-import { MEDIUM_PROFILE } from "@/data/posts";
+import { MEDIUM_FEED, MEDIUM_PROFILE } from "@/data/posts";
 import { PageHero } from "@/components/layout/page-hero";
 import { Container } from "@/components/layout/container";
 import { Reveal } from "@/components/motion/reveal";
@@ -12,11 +13,15 @@ import { Button } from "@/components/ui/button";
 
 export const revalidate = 86400;
 
-export const metadata: Metadata = {
+const blogMeta = pageMetadata({
   title: "Blog",
-  description: "Articles by Bhautik Kapadiya on backend engineering, AI streaming, MCP, caching, concurrency and React.",
-  alternates: { canonical: "/blog" },
-};
+  description:
+    "Articles by Bhautik Kapadiya on backend engineering, LLM streaming in production, MCP, caching, fan-out concurrency in .NET and React.",
+  path: "/blog",
+  keywords: ["backend engineering blog", "LLM streaming", "MCP architecture", ".NET concurrency", "caching"],
+});
+
+export const metadata = { ...blogMeta, alternates: { canonical: "/blog", types: { "application/rss+xml": MEDIUM_FEED } } };
 
 const dateFormat = new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
 
@@ -26,6 +31,29 @@ export default async function BlogPage() {
 
   return (
     <>
+      <JsonLd
+        data={[
+          {
+            "@type": "Blog",
+            name: `${site.name} — Blog`,
+            url: `${site.url}/blog`,
+            author: { "@id": PERSON_ID },
+            blogPost: posts.map((p) => ({
+              "@type": "BlogPosting",
+              headline: p.title,
+              url: p.link,
+              datePublished: p.date,
+              ...(p.image ? { image: p.image } : {}),
+              keywords: p.categories.join(", "),
+              author: { "@id": PERSON_ID },
+            })),
+          },
+          breadcrumbSchema([
+            { name: "Home", path: "/" },
+            { name: "Blog", path: "/blog" },
+          ]),
+        ]}
+      />
       <PageHero
         eyebrow="Blog"
         title="Notes from production."

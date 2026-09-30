@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import { breadcrumbSchema, JsonLd, pageMetadata, PERSON_ID } from "@/lib/seo";
 import { howIBuild } from "@/data/offers";
 import { site } from "@/data/site";
 import { PageHero } from "@/components/layout/page-hero";
@@ -8,15 +8,36 @@ import { FinalCTA } from "@/components/offer/final-cta";
 import { HeroActions } from "@/components/offer/hero-actions";
 import { Reveal } from "@/components/motion/reveal";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "How I Build",
-  description: `How ${site.name} takes AI and web products from idea to production: methodology, sprint cadence and working principles.`,
-  alternates: { canonical: "/how-i-build" },
-};
+  description: `How ${site.name} takes AI and web products from idea to production in six steps: discovery, architecture, iterative build, testing, deployment and launch support.`,
+  path: "/how-i-build",
+  keywords: ["software development process", "AI product development process", "sprint methodology"],
+});
 
 export default function HowIBuildPage() {
   return (
     <>
+      <JsonLd
+        data={[
+          {
+            "@type": "HowTo",
+            name: `How ${site.name} takes a product from idea to production`,
+            description: howIBuild.subtitle,
+            author: { "@id": PERSON_ID },
+            step: howIBuild.steps.map((s, i) => ({
+              "@type": "HowToStep",
+              position: i + 1,
+              name: s.title,
+              text: `${s.description} (${s.duration})`,
+            })),
+          },
+          breadcrumbSchema([
+            { name: "Home", path: "/" },
+            { name: "How I Build", path: "/how-i-build" },
+          ]),
+        ]}
+      />
       <PageHero eyebrow="Process" title={howIBuild.title} subtitle={howIBuild.subtitle}>
         <HeroActions primary="Let's talk" />
       </PageHero>

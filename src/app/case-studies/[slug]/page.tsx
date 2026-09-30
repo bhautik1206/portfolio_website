@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { breadcrumbSchema, JsonLd, pageMetadata, PERSON_ID } from "@/lib/seo";
+import { site } from "@/data/site";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -20,12 +22,14 @@ export async function generateMetadata({ params }: PageProps<"/case-studies/[slu
   const { slug } = await params;
   const project = getProject(slug);
   if (!project) return {};
-  return {
+  return pageMetadata({
     title: `${project.name} Case Study`,
-    description: project.summary,
-    alternates: { canonical: `/case-studies/${project.slug}` },
-    openGraph: { images: [{ url: project.image }] },
-  };
+    description: `${project.summary} Key feature: ${project.keyFeature}.`,
+    path: `/case-studies/${project.slug}`,
+    image: project.image,
+    type: "article",
+    keywords: [project.name, project.category, ...project.stack, ...(project.location ? [`website developer ${project.location}`] : [])],
+  });
 }
 
 export default async function CaseStudyPage({ params }: PageProps<"/case-studies/[slug]">) {
@@ -45,9 +49,34 @@ export default async function CaseStudyPage({ params }: PageProps<"/case-studies
     { label: "Role", value: project.personal ? "Design & development" : "Web design & development" },
   ];
 
+  const isRepoLink = project.url.includes("github.com");
   return (
     <article>
-      <Container className="pt-10 sm:pt-14">
+      <JsonLd
+        data={[
+          {
+            "@type": isRepoLink ? "SoftwareSourceCode" : "CreativeWork",
+            "@id": `${site.url}/case-studies/${project.slug}#work`,
+            name: project.name,
+            headline: `${project.name} Case Study`,
+            description: project.overview || project.summary,
+            url: `${site.url}/case-studies/${project.slug}`,
+            image: `${site.url}${project.image}`,
+            genre: project.category,
+            keywords: project.stack.join(", "),
+            creator: { "@id": PERSON_ID },
+            author: { "@id": PERSON_ID },
+            ...(isRepoLink ? { codeRepository: project.url } : project.live ? { sameAs: project.url } : {}),
+            ...(project.location ? { locationCreated: { "@type": "Place", name: project.location } } : {}),
+          },
+          breadcrumbSchema([
+            { name: "Home", path: "/" },
+            { name: "Case Studies", path: "/case-studies" },
+            { name: project.name, path: `/case-studies/${project.slug}` },
+          ]),
+        ]}
+      />
+      <Container className="pt-28 sm:pt-32">
         <Link href="/case-studies" className="inline-flex items-center gap-1.5 text-sm font-semibold text-muted-foreground hover:text-foreground">
           <ArrowLeft className="size-4" />
           All case studies
@@ -147,11 +176,12 @@ export default async function CaseStudyPage({ params }: PageProps<"/case-studies
               </div>
             </Reveal>
           )}
-          <Reveal className="rounded-2xl border border-border bg-foreground p-6 text-background">
-            <p className="font-mono text-[11px] uppercase tracking-[0.12em] opacity-70">Need something like this?</p>
+          <Reveal className="rounded-2xl border border-border bg-card p-6 text-card-foreground">
+            <p className="font-mono text-[11px] uppercase tracking-[0.12em] text-muted-foreground">Need something like this?</p>
             <p className="mt-3 text-lg font-bold leading-snug">I build websites, stores and AI features that businesses rely on.</p>
             <ContactButton
-              className="mt-5 w-full bg-background text-foreground hover:bg-background/90"
+              variant="invert"
+              className="mt-5 w-full"
               intent={{
                 subject: `Project like ${project.name}`,
                 message: `Hello Bhautik, I saw your ${project.name} case study and I'd like something similar for my business.`,

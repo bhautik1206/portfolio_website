@@ -7,7 +7,7 @@ import { Reveal } from "@/components/motion/reveal";
 export function Testimonials() {
   if (!site.showTestimonials || testimonials.length === 0) return null;
   return (
-    <Section id="testimonials" eyebrow="Testimonials" title="In good company.">
+    <Section id="testimonials" size="chapter" title="In good company.">
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {testimonials.map((t, i) => (
           <Reveal key={t.name} delay={i * 0.05} className="flex flex-col rounded-2xl border border-border bg-card p-7">

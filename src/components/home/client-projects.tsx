@@ -11,8 +11,9 @@ export function ClientProjects() {
   return (
     <Section
       id="client-projects"
-      eyebrow="Selected work"
-      title="Built to work, shipped for real clients."
+      size="chapter"
+      title="Built to work."
+      titleMuted="Proven in production."
       description={`${clientProjects.length} client websites and stores for clinics, jewellers, interior studios, D2C brands and a Web3 platform, delivered since 2022.`}
     >
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

@@ -3,12 +3,20 @@ import { Section } from "@/components/layout/section";
 import { Reveal } from "@/components/motion/reveal";
 import { Pill } from "@/components/ui/pill";
 
-export function StackColumns({ id = "stack", bordered = true }: { id?: string; bordered?: boolean }) {
+export function StackColumns({
+  id = "stack",
+  bordered = true,
+  size = "chapter",
+}: {
+  id?: string;
+  bordered?: boolean;
+  size?: "chapter" | "page";
+}) {
   return (
     <Section
       id={id}
       bordered={bordered}
-      eyebrow="Tech stack"
+      size={size}
       title="A stack with purpose."
       description="Tools I use in production, chosen for reliability and fit rather than novelty."
     >
