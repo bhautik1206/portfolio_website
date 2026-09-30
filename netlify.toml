@@ -6,5 +6,10 @@
   NODE_VERSION = "22"
   NPM_FLAGS = "--no-audit --no-fund"
 
+# Netlify's Next.js runtime (OpenNext adapter). Without it Netlify serves the raw
+# .next folder as static files and every route returns 404.
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
 # The legacy CRA site lives in legacy/ and is copied to /ov at build time.
 # Do not add a "/* -> /index.html" SPA redirect here: it would break Next.js routing.
