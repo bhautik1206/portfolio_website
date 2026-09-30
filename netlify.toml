@@ -6,5 +6,5 @@
   NODE_VERSION = "22"
   NPM_FLAGS = "--no-audit --no-fund"
 
-# The legacy CRA site lives in legacy/ and is copied to /old-version at build time.
+# The legacy CRA site lives in legacy/ and is copied to /ov at build time.
 # Do not add a "/* -> /index.html" SPA redirect here: it would break Next.js routing.

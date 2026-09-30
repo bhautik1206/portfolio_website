@@ -14,7 +14,7 @@
 /build
 
 # generated copy of the legacy site (built by scripts/copy-legacy.mjs)
-/public/old-version/
+/public/ov/
 
 # env
 .env

@@ -3,7 +3,7 @@ import { join } from "node:path";
 
 const root = process.cwd();
 const src = join(root, "legacy", "build");
-const dest = join(root, "public", "old-version");
+const dest = join(root, "public", "ov");
 
 if (!existsSync(join(src, "index.html"))) {
   console.error("legacy/build/index.html not found. Run the legacy build first.");
@@ -11,6 +11,6 @@ if (!existsSync(join(src, "index.html"))) {
 }
 
 rmSync(dest, { recursive: true, force: true });
-// _redirects is the old SPA catch-all; the legacy app uses HashRouter and doesn't need it.
+// _redirects is the old CRA SPA catch-all; Next.js rewrites handle /ov/* deep links instead.
 cpSync(src, dest, { recursive: true, filter: (path) => !path.endsWith("_redirects") });
-console.log("Copied legacy build to public/old-version");
+console.log("Copied legacy build to public/ov");

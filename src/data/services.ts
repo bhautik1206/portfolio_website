@@ -45,40 +45,6 @@ export const services: Service[] = [
   },
 ];
 
-export type Capability = {
-  icon: "database" | "workflow" | "gauge" | "layout";
-  title: string;
-  description: string;
-  link: { label: string; href: string };
-};
-
-export const capabilities: Capability[] = [
-  {
-    icon: "database",
-    title: "Knowledge, connected.",
-    description: "Retrieval that turns scattered documents and data into grounded, cited answers your users can trust.",
-    link: { label: "RAG & retrieval", href: "/hire-me#estimator" },
-  },
-  {
-    icon: "workflow",
-    title: "Work that moves itself.",
-    description: "Agents that call tools, recover from interruptions and know when to hand off to a human.",
-    link: { label: "Agent workflows", href: "/hire-me#estimator" },
-  },
-  {
-    icon: "gauge",
-    title: "Built for real traffic.",
-    description: ".NET and Node APIs, SQL tuning and secure transaction flows, proven on platforms with 1.6M+ concurrent users.",
-    link: { label: "Backend & performance", href: "/#experience" },
-  },
-  {
-    icon: "layout",
-    title: "Every screen matters.",
-    description: "React, Angular and Next.js interfaces, plus business websites with clear enquiry paths that turn visitors into clients.",
-    link: { label: "Web apps & websites", href: "/case-studies" },
-  },
-];
-
 export const systemLayers = [
   { icon: "layout", title: "Experience", detail: "Web · Apps · Websites" },
   { icon: "workflow", title: "Intelligence", detail: "RAG · Agents · LLMs" },

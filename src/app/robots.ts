@@ -20,8 +20,8 @@ const aiCrawlers = [
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
-      { userAgent: "*", allow: "/", disallow: "/old-version/" },
-      { userAgent: aiCrawlers, allow: ["/", "/llms.txt"], disallow: "/old-version/" },
+      { userAgent: "*", allow: "/", disallow: "/ov/" },
+      { userAgent: aiCrawlers, allow: ["/", "/llms.txt"], disallow: "/ov/" },
     ],
     sitemap: `${site.url}/sitemap.xml`,
     host: site.url,

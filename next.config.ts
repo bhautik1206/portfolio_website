@@ -14,14 +14,18 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "miro.medium.com" },
     ],
   },
+  async redirects() {
+    return [
+      { source: "/old-version", destination: "/ov", permanent: true },
+      { source: "/old-version/:path*", destination: "/ov/:path*", permanent: true },
+    ];
+  },
   async rewrites() {
     return {
-      beforeFiles: [
-        { source: "/old-version", destination: "/old-version/index.html" },
-        { source: "/old-version/", destination: "/old-version/index.html" },
-      ],
+      beforeFiles: [{ source: "/ov", destination: "/ov/index.html" }],
       afterFiles: [],
-      fallback: [],
+      // Legacy SPA deep links (/ov/h, /ov/hide): real files under public/ov are served first.
+      fallback: [{ source: "/ov/:path*", destination: "/ov/index.html" }],
     };
   },
 };

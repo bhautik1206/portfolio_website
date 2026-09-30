@@ -51,7 +51,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center py-2 md:py-4 md:px-2 pl-2 mx-auto">
           <div className="flex items-center cursor-pointer">
             <a
-              href="/"
+              href={`${process.env.PUBLIC_URL || ""}/`}
               className={
                 darkMode
                   ? "text-xl font-medium text-decoration-none whitespace-nowrap text-black"

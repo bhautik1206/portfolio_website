@@ -85,7 +85,7 @@ export function Footer() {
           <p>
             © {year} {site.name}. All rights reserved.
           </p>
-          <a href="/old-version" className="font-mono uppercase tracking-[0.12em] transition hover:text-foreground">
+          <a href="/ov" className="font-mono uppercase tracking-[0.12em] transition hover:text-foreground">
             View old version →
           </a>
         </Container>
