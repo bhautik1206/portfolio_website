@@ -18,20 +18,20 @@ export function FinalCTA({
   return (
     <section className="border-t border-border py-20 sm:py-24">
       <Container>
-        <Reveal className="relative overflow-hidden rounded-3xl bg-foreground px-6 py-14 text-center text-background sm:px-12">
+        <Reveal className="relative overflow-hidden rounded-3xl border border-border bg-card px-6 py-14 text-center text-card-foreground sm:px-12">
           <div
             aria-hidden
-            className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,color-mix(in_oklab,var(--primary)_45%,transparent),transparent_60%)] opacity-60"
+            className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,color-mix(in_oklab,var(--primary)_30%,transparent),transparent_60%)] opacity-70"
           />
-          <p className="relative font-mono text-[11px] uppercase tracking-[0.12em] opacity-70">{eyebrow}</p>
+          <p className="relative font-mono text-[11px] uppercase tracking-[0.12em] text-muted-foreground">{eyebrow}</p>
           <h2 className="relative mx-auto mt-4 max-w-2xl text-3xl font-extrabold tracking-tight sm:text-4xl">{title}</h2>
-          <p className="relative mx-auto mt-4 max-w-xl opacity-80">{description}</p>
+          <p className="relative mx-auto mt-4 max-w-xl text-muted-foreground">{description}</p>
           <div className="relative mt-8 flex flex-wrap justify-center gap-3">
-            <ContactButton size="lg" className="bg-primary text-primary-foreground">
+            <ContactButton size="lg" variant="invert">
               Let&apos;s talk
               <ArrowRight />
             </ContactButton>
-            <Button size="lg" asChild className="bg-background text-foreground hover:bg-background/90">
+            <Button size="lg" asChild variant="glass">
               <a href={mailtoLink()}>
                 <Mail />
                 {site.email}

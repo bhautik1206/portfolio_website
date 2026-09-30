@@ -1,4 +1,5 @@
-import type { Metadata } from "next";
+import { breadcrumbSchema, JsonLd, pageMetadata, PERSON_ID } from "@/lib/seo";
+import { site } from "@/data/site";
 import { ArrowRight } from "lucide-react";
 import { agencies } from "@/data/offers";
 import { PageHero } from "@/components/layout/page-hero";
@@ -10,11 +11,12 @@ import { HeroActions } from "@/components/offer/hero-actions";
 import { Reveal } from "@/components/motion/reveal";
 import { ContactButton } from "@/components/contact/contact-button";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "For Agencies",
-  description: agencies.subtitle,
-  alternates: { canonical: "/for-agencies" },
-};
+  description: "White-label development for agencies by Bhautik Kapadiya: Figma-to-production builds, AI features, SaaS backends and overflow support under NDA.",
+  path: "/for-agencies",
+  keywords: ["white label web development", "agency development partner", "overflow developer for agencies"],
+});
 
 export default function ForAgenciesPage() {
   const intent = {
@@ -23,6 +25,31 @@ export default function ForAgenciesPage() {
   };
   return (
     <>
+      <JsonLd
+        data={[
+          {
+            "@type": "Service",
+            name: "For Agencies: white-label development",
+            description: agencies.subtitle,
+            url: `${site.url}/for-agencies`,
+            provider: { "@id": PERSON_ID },
+            audience: { "@type": "Audience", audienceType: "Digital agencies" },
+            areaServed: "Worldwide",
+            hasOfferCatalog: {
+              "@type": "OfferCatalog",
+              name: "For Agencies",
+              itemListElement: agencies.services.map((o) => ({
+                "@type": "Offer",
+                itemOffered: { "@type": "Service", name: o.title, description: o.description },
+              })),
+            },
+          },
+          breadcrumbSchema([
+            { name: "Home", path: "/" },
+            { name: "For Agencies", path: "/for-agencies" },
+          ]),
+        ]}
+      />
       <PageHero eyebrow={agencies.eyebrow} title={agencies.title} subtitle={agencies.subtitle}>
         <HeroActions primary="Discuss a project" intent={intent} badges={["Mutual NDA", "White-label delivery", "Reply within 24 hours"]} />
       </PageHero>

@@ -9,10 +9,9 @@ const Freelancing = () => {
   const darkMode = theme.state.darkMode;
   const location = useLocation();
 
-  // determine visibility based on the current URL; works for both
-  // BrowserRouter and HashRouter (#/hide)
+  // hidden list is shown on /ov/h (short) or /ov/hide, plus old #/hide links
   const isHide =
-    location.pathname === "/hide" || location.hash === "#/hide";
+    ["/h", "/hide"].includes(location.pathname) || location.hash === "#/hide" || location.hash === "#/h";
 
   return (
     <div

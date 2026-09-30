@@ -44,3 +44,9 @@ export const services: Service[] = [
     tags: ["Responsive", "SEO", "Enquiry flows"],
   },
 ];
+
+export const systemLayers = [
+  { icon: "layout", title: "Experience", detail: "Web · Apps · Websites" },
+  { icon: "workflow", title: "Intelligence", detail: "RAG · Agents · LLMs" },
+  { icon: "shield", title: "Platform", detail: "APIs · Data · Cloud" },
+] as const;

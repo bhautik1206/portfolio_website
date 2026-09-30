@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import { breadcrumbSchema, faqSchema, JsonLd, pageMetadata, professionalServiceSchema } from "@/lib/seo";
 import { heroBadges, hireMe } from "@/data/offers";
 import { projects } from "@/data/projects";
 import { PageHero } from "@/components/layout/page-hero";
@@ -15,16 +15,28 @@ import { Testimonials } from "@/components/home/testimonials";
 import { ProjectCard } from "@/components/projects/project-card";
 import { Reveal } from "@/components/motion/reveal";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "Hire Me",
-  description: hireMe.subtitle,
-  alternates: { canonical: "/hire-me" },
-};
+  description:
+    "Hire Bhautik Kapadiya for AI agents, RAG pipelines, full-stack web apps and backend APIs. Fixed-scope packages, 100% code ownership and a proposal within 24 hours.",
+  path: "/hire-me",
+  keywords: ["hire freelance developer", "hire RAG developer", "AI agent development services", "fixed price web development"],
+});
 
 export default function HireMePage() {
   const featured = projects.filter((p) => p.featured).slice(0, 3);
   return (
     <>
+      <JsonLd
+        data={[
+          faqSchema(hireMe.faq),
+          professionalServiceSchema,
+          breadcrumbSchema([
+            { name: "Home", path: "/" },
+            { name: "Hire Me", path: "/hire-me" },
+          ]),
+        ]}
+      />
       <PageHero eyebrow={hireMe.eyebrow} title={hireMe.title} subtitle={hireMe.subtitle}>
         <HeroActions primary="Book a scoping chat" badges={heroBadges} />
       </PageHero>
@@ -62,7 +74,7 @@ export default function HireMePage() {
         <ProcessSteps steps={hireMe.process} />
       </Section>
 
-      <StackColumns id="hire-stack" />
+      <StackColumns id="hire-stack" size="page" />
 
       <Section eyebrow="Case studies" title="Recent work.">
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

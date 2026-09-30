@@ -56,7 +56,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
   const value = React.useMemo(() => ({ motionOn, toggleMotion: () => setStoredMotion(!motionOn) }), [motionOn]);
 
   return (
-    <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+    <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} disableTransitionOnChange>
       <MotionContext.Provider value={value}>
         <MotionConfig reducedMotion={motionOn ? "user" : "always"}>{children}</MotionConfig>
       </MotionContext.Provider>
