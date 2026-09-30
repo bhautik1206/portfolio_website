@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-// React Router v6: Switch -> Routes, exact removed, element prop used
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+// React Router v6. Served under /ov (package.json "homepage"), so BrowserRouter uses it as basename.
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Contact from "./views/Contact";
 import Navbar from "./components/Navbar";
 import About from "./views/About";
@@ -21,7 +21,7 @@ function App() {
   return (
     <ThemeProvider>
       {!loading ? (
-        <Router>
+        <Router basename={process.env.PUBLIC_URL || "/"}>
           <Navbar />
           <Routes>
             <Route
@@ -32,6 +32,19 @@ function App() {
                   <About />
                   <Services />
                   <Freelancing isHide={false} />
+                  <Projects />
+                  <Contact />
+                </>
+              }
+            />
+            <Route
+              path="/h"
+              element={
+                <>
+                  <Home />
+                  <About />
+                  <Services />
+                  <Freelancing isHide={true} />
                   <Projects />
                   <Contact />
                 </>
